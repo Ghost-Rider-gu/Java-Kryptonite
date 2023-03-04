@@ -11,6 +11,7 @@ public class Kernel32DLL {
         char[] buffer = new char[WinBase.MAX_COMPUTERNAME_LENGTH + 1];
         intByReference.setValue(buffer.length);
         System.out.println(Kernel32.INSTANCE.GetComputerName(buffer, intByReference));
+        System.out.println(Kernel32Extended.INSTANCE.GetFileSize(null, null));
     }
 
     public static boolean isWinPlatform() {
