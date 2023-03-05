@@ -18,7 +18,7 @@ package corp.siendev.com;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TwoSum {
+public final class TwoSum {
     public static int[] sumOfTwoNumbers(int[] nums, int target) {
         Set<Integer> potentialCandidates = new HashSet<>();
 
