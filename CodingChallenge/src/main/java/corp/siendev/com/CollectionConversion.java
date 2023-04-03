@@ -9,8 +9,7 @@
  */
 package corp.siendev.com;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -47,5 +46,14 @@ public final class CollectionConversion {
         return listOfIntegers.stream()
                 .mapToInt(Integer::intValue)
                 .toArray();
+    }
+
+    public static Set<Integer> listToSetFirst(List<Integer> listOfIntegers) {
+        return new HashSet<>(listOfIntegers);
+    }
+
+    public static Set<Integer> listToSetSecond(List<Integer> listOfInteger) {
+        return listOfInteger.stream()
+                .collect(Collectors.toSet());
     }
 }
