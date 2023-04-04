@@ -9,7 +9,10 @@
  */
 package corp.siendev.com;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -24,13 +27,10 @@ public final class CollectionConversion {
     }
 
     public static List<Integer> convertArrayToListSecond(int[] arrayOfIntegers) {
+        // for the same purpose you can also use Arrays.stream(arrayOfIntegers).boxed().collect(Collectors.toList());
         return IntStream.of(arrayOfIntegers)
                 .boxed()
                 .collect(Collectors.toList());
-        /**
-         * or you can simply use Arrays
-         * return Arrays.stream(arrayOfIntegers).boxed().collect(Collectors.toList());
-         */
     }
 
     public static int[] convertListToArrayFirst(List<Integer> listOfIntegers) {
