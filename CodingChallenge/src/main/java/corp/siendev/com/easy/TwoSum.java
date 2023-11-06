@@ -1,17 +1,16 @@
 /**
  * @author Iurii Golubnichenko
- *
  * There is an array of integers and an integer as a target.
  * You need to write a method that will return indices of the two numbers such that they add up to target.
- *
- * Example
- * ==================================================================
- * Input: nums = [3, 7, 15, 5, 4], target = 9
- * Output: [5, 4] -> because 5 + 4 == 9
- * ==================================================================
- *
+ * <pre>
+ *  Example
+ *  ==================================================================
+ *      Input: nums = [3, 7, 15, 5, 4], target = 9
+ *      Output: [5, 4] -> because 5 + 4 == 9
+ *  ==================================================================
+ * </pre>
  */
-package corp.siendev.com;
+package corp.siendev.com.easy;
 
 import java.util.Arrays;
 import java.util.HashSet;

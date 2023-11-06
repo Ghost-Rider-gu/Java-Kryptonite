@@ -3,7 +3,7 @@
  *
  * Test cases for Fibonacci Sequence.
  */
-package corp.siendev.com;
+package corp.siendev.com.easy;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

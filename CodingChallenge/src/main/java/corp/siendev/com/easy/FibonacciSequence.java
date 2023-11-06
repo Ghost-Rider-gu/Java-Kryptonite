@@ -1,18 +1,17 @@
 /**
  * @author Iurii Golubnichenko
- *
  * In mathematics, the Fibonacci is a sequence, in which each number is the sum of the two preceding ones.
  * The sequence commonly starts from 0 and 1, although some authors start the sequence from 1 and 1 or sometimes (as did Fibonacci) from 1 and 2.
  * Starting from 0 and 1, the first few values in the sequence are:[1] (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144)
- *
- * Example
- * ==================================================================
- * Input:  21    | 6 | 12
- * Output: 10946 | 8 | 144
- * ==================================================================
- *
+ * <pre>
+ *  Example
+ *  ==================================================================
+ *      Input:  21    | 6 | 12
+ *      Output: 10946 | 8 | 144
+ *  ==================================================================
+ * </pre>
  */
-package corp.siendev.com;
+package corp.siendev.com.easy;
 
 public final class FibonacciSequence {
     public static double fibonacciWithRecursion(int number) {

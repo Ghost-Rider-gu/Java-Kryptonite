@@ -3,7 +3,7 @@
  *
  * Test cases for TwoSum challenge.
  */
-package corp.siendev.com;
+package corp.siendev.com.easy;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
