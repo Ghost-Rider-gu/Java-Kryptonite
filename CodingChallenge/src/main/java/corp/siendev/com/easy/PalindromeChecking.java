@@ -13,9 +13,8 @@
  * Input: givenString = "hello";
  * Output: false
  * ======================================================================================================
- *
  */
-package corp.siendev.com;
+package corp.siendev.com.easy;
 
 public class PalindromeChecking {
     /**

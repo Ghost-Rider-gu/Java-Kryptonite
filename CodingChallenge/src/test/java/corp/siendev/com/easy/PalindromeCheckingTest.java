@@ -3,8 +3,9 @@
  *
  * Test cases for Palindrome checking challenge.
  */
-package corp.siendev.com;
+package corp.siendev.com.easy;
 
+import corp.siendev.com.easy.PalindromeChecking;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
