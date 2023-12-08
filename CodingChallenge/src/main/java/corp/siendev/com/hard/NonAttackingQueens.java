@@ -1,12 +1,15 @@
-package corp.siendev.com;
+package corp.siendev.com.hard;
 
 import java.util.Arrays;
 
+/**
+ * The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+ * Given an integer n, return a solution to the n-queens puzzle.
+ */
 public class NonAttackingQueens {
     private static final int boardSize = 4;
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         nQueensSolution();
     }
 
