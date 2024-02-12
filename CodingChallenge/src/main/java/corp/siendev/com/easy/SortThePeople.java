@@ -19,6 +19,7 @@ import java.util.Map;
  *      Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]
  *      Output: ["Bob","Alice","Bob"]
  *      Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
+ * </pre>
  */
 public class SortThePeople {
     public static void main(String[] args) {
