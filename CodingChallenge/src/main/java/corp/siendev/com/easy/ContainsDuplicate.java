@@ -1,5 +1,6 @@
 package corp.siendev.com.easy;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,8 +23,9 @@ import java.util.Set;
  */
 public class ContainsDuplicate {
     public static void main(String[] args) {
-        int[] nums = new int[] { 1, 2, 3, 1 };
+        int[] nums = new int[] { 1, 2, 3, 4, 4 };
         System.out.println(containsDuplicate(nums));
+        System.out.println(containsDuplicateVersion2(nums));
     }
 
     private static boolean containsDuplicate(int[] nums) {
@@ -33,6 +35,23 @@ public class ContainsDuplicate {
                 return true;
             } else {
                 uniqueElements.add(number);
+            }
+        }
+        return false;
+    }
+
+    private static boolean containsDuplicateVersion2(int[] nums) {
+        if (nums.length == 0) {
+            return false;
+        }
+
+        Arrays.sort(nums);
+        int currentNum = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (currentNum == nums[i]) {
+                return true;
+            } else {
+                currentNum = nums[i];
             }
         }
         return false;
